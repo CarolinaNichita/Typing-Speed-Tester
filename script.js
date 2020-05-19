@@ -5,6 +5,7 @@ const resetButton = document.querySelector("#reset");
 const theTimer = document.querySelector(".timer");
 
 
+
 // Add leading zero to numbers 9 or below (purely for aesthetics):
 
 
@@ -19,16 +20,16 @@ function spellCheck() {
 
 // Start the timer:
 function start() {
-    let textEnterdLength = testArea.value.length;
-    console.log(textEnterdLength);
+    let textEnteredLength = testArea.value.length;
+    console.log(textEnteredLength);
 }
 
 // Reset everything:
 function reset() {
-    console.log("reset function has been pressed!");
+    console.log("Reset button has pressed!");
 }
 
 // Event listeners for keyboard input and the reset button:
-testArea.addEventListener("keypress", start, false)
+testArea.addEventListener("keypress", start, false);
 testArea.addEventListener("keyup", spellCheck, false);
 resetButton.addEventListener("click", reset, false);
